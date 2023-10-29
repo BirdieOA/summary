@@ -1,0 +1,57 @@
+:root {
+  --uno: #3f668a;
+  --dos: #c87195;
+  --tres: #fb8ab9;
+  --cuatro: #7b95b0;
+  --cinco: #fefee6;
+  --seis: #0f172a;
+}
+
+body {
+  background-color: #3f668a;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  margin: 0px;
+}
+
+h1 {
+  color: var(--seis);
+  text-align: center;
+  font-size: 60px;
+}
+
+container {
+  position: absolute;
+  
+}
+details {
+  border: 2px solid var(--cinco);
+  border-radius: 5px;
+  padding: 0.7em 0.5em;
+  color: var(--cinco);
+  background-color: var(--cuatro);
+  cursor: pointer;
+  position: relative;
+  margin-top: 40px;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+    background-color:  var(--dos);
+}
+
+details[open] summary {
+  border-bottom: 2px solid;
+  margin-bottom: 0.5em;
+}
